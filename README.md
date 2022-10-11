@@ -1,2 +1,2 @@
 # DMACC-FinalProject
-**This is a line**
+This is the start of the README.md for my Final Project

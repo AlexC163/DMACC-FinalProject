@@ -1,0 +1,1 @@
+public class MaxFamilySizeExceeded extends Exception{ }

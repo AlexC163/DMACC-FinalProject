@@ -110,7 +110,7 @@ public class Restaurant {
 		
 		int largestFamily = findLargestFamily(); // Find largest available family
 		int bestTable = findBestTable(largestFamily); // Find best table for family
-		if (bestTable == -1 || largestFamily == -1) return ""; // Final check
+//		if (bestTable == -1 || largestFamily == -1) return ""; // Final check
 		return "Size " + bestTable + " recieved size " + largestFamily + " family!"; // Return needed information as a String
 	}
 
@@ -146,9 +146,7 @@ public class Restaurant {
 	 * @param familySize
 	 * @return int
 	 */
-	private int findBestTable(int familySize) {
-		if (familySize == 0 || tables.size() == 0) return -1; // Return -1 if no family or table available
-		
+	private int findBestTable(int familySize) {		
 		Iterator<Integer> tablesIterator = tables.iterator(); // Create new tables iterator
 		// Loop through tables queue
 		while (tablesIterator.hasNext()) {
@@ -160,7 +158,7 @@ public class Restaurant {
 			}
 		}
 
-		return -1; // Code will never reach this point - based on pure logic
+		return -1; // Return -1 if no family or table available
 	}
 
 	/**
